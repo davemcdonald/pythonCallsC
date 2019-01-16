@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include "pi.h"
+main()
+{
+    float result = pi_approx(100);
+    printf("the result it %f\n",result);
+    return 0;
+}
