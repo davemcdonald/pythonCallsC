@@ -12,7 +12,7 @@ ffibuilder.set_source("_pi_cffi",
 """
      #include "pi.h"   // the C header of the library
 """,
-     libraries=['piapprox'])   # library name, for the linker
+     libraries=['piapprox'],extra_link_args=["-L."])   # library name, for the linker
 
 if __name__ == "__main__":
     ffibuilder.compile(verbose=True)
